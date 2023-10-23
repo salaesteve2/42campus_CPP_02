@@ -10,7 +10,7 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -f
 
-%.o: %.c
+%.o: %.cpp
 			@${CC} ${FLAGS} -c $< -o $@
 
 ${NAME}: ${OBJS}
